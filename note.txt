@@ -1,0 +1,29 @@
+
+
+Route::group(['prefix' => 'user'], function () {
+    Route::get('/', function () {
+        dd('This is the User module index page. Build something great!');
+    });
+    
+    Route::get('/test/index','TestController@index');
+    
+    Route::get('/user/index','UserController@index');
+});
+
+---------------------------------
+svn地址  http://svn.saiyf.cn:886/svn/game/
+
+你的svn账号密码是wuxs/wuxs123
+
+----------------------------------------
+homestead安装教程
+http://note.youdao.com/share/?id=d509ea02c6faf11c19648f71b6a44a14&type=note#/
+
+命令行	说明
+vagrant init	初始化 vagrant
+vagrant up	启动 vagrant
+vagrant halt	关闭 vagrant
+vagrant ssh	通过 SSH 登录 vagrant（需要先启动 vagrant）
+vagrant provision	重新应用更改 vagrant 配置
+vagrant destroy	删除 vagrant
+
